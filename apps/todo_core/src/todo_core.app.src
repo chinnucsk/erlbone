@@ -1,0 +1,13 @@
+{application, todo_core,
+ [
+  {description, "core funcs for todo app"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  id_server
+                 ]},
+  {mod, { todo_core_app, []}},
+  {env, []}
+ ]}.

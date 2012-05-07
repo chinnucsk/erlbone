@@ -1,0 +1,12 @@
+{application, id_server,
+ [
+  {description, "id server for guids"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { id_server_app, []}},
+  {env, []}
+ ]}.

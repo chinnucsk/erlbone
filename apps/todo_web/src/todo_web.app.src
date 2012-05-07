@@ -1,0 +1,19 @@
+%%-*- mode: erlang -*-
+{application, todo_web,
+ [
+  {description, "webmachine component of todo app"},
+  {vsn, "0.1.0"},
+  {modules, []},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  inets,
+                  crypto,
+                  mochiweb,
+                  webmachine,
+                  todo_core
+                 ]},
+  {mod, { todo_web_app, []}},
+  {env, []}
+ ]}.
